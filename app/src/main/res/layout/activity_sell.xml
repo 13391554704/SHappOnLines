@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.SellActivity">
+
+    <include
+        android:id="@+id/sell_head"
+        layout="@layout/head_title_item" />
+    <include
+        android:id="@+id/load_sale_nodata"
+        layout="@layout/activity_no_data"
+        android:layout_above="@+id/sell_bottom_ll"
+        android:layout_below="@+id/sell_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--
+    <LinearLayout
+        android:id="@+id/sell_top"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/sell_head"
+        android:background="#ffffff"
+        android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/sell_user_ll"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <EditText
+                    android:id="@+id/sell_et_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:hint="商户名称"
+                    android:singleLine="true"
+                    android:background="#ffffff"
+                    android:textColor="#505050"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sell_address_ll"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/sell_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:hint="商户地址"
+                    android:singleLine="true"
+                    android:background="#ffffff"
+                    android:textColor="#9c9c97"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="14sp" />
+                <ImageView
+                    android:id="@+id/sell_iv_loc"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/retail_loc"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_below="@+id/sell_top"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#f8f8f8"/>
+        -->
+    <LinearLayout
+        android:id="@+id/sell_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f0f0f0"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="合计"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/moneytu" />
+
+                <TextView
+                    android:id="@+id/sell_tv_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="0"
+                    android:textColor="#e84133"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sell_rl_jiesuan"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#e84133">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="结算"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:text="("
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/sell_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:text=")"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <com.sw.mobsale.online.util.SaleSwipeListView
+        android:id="@+id/sell_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sell_bottom_ll"
+        android:layout_below="@+id/sell_head"
+        android:divider="#f8f8f8"
+        android:dividerHeight="8dp" />
+
+</RelativeLayout>

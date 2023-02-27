@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_below="@+id/retail_head"
+        android:id="@+id/retail_rl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/detail_rl_content_iv"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sell_pro"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/detail_rl_content_tv"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/detail_rl_content_iv"
+            android:layout_marginTop="20dp"
+            android:text="您还没有相关商品"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:textColor="#333333"
+            />
+    </RelativeLayout>
+</LinearLayout>

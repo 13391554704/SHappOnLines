@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.ResProductActivity">
+
+    <include
+        android:id="@+id/res_head"
+        layout="@layout/head_title_item" />
+
+    <com.sw.mobsale.online.util.MyScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_head">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/res_ll_unfinish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/res_order_store" />
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="未配送商户"
+                    android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/res_unfinish_store_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textSize="16sp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textSize="16sp"
+                        android:text="单" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/res_iv"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/manager_xia" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f8f8f8" />
+
+            <com.sw.mobsale.online.util.MyListView
+                android:id="@+id/res_pro_unfinish_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#f8f8f8"
+                android:dividerHeight="4dp"
+                android:visibility="gone"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:id="@+id/res_ll_unfinish_pro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/res_order_pro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="未配送商品"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/res_iv_un_pro"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/manager_xia" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f8f8f8" />
+
+            <com.sw.mobsale.online.util.MyListView
+                android:id="@+id/res_pro_un_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#f8f8f8"
+                android:dividerHeight="4dp"
+                android:visibility="gone"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:id="@+id/res_ll_res_pro"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/res_pro_un_lv"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/res_retail_pro" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="零售商品"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/res_iv_pro"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/manager_xia" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f8f8f8" />
+
+            <com.sw.mobsale.online.util.MyListView
+                android:id="@+id/res_pro_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#f8f8f8"
+                android:dividerHeight="4dp"
+                android:visibility="gone"
+                android:layout_marginBottom="6dp"/>
+
+            <LinearLayout
+                android:id="@+id/res_ll_sale_un_finish"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/res_pro_un_lv"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/res_down_order" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="销售单挂单"
+                    android:textSize="16sp"/>
+
+                <ImageView
+                    android:id="@+id/res_iv_sale"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/manager_xia" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="#f8f8f8" />
+
+            <com.sw.mobsale.online.util.ReSwipeListView
+                android:id="@+id/res_pro_sale_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#f8f8f8"
+                android:dividerHeight="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.sw.mobsale.online.util.MyScrollView>
+</RelativeLayout>

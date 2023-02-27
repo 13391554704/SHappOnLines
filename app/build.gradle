@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    packagingOptions {//加上这写代码
+        pickFirst 'META-INF/*'
+    }
+    defaultConfig {
+        applicationId "com.sw.mobsale.online"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    allprojects {
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile) {
+                options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+            }
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:29.0.2'
+    implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/universal-image-loader-1.9.5.jar')
+    implementation files('libs/zxing.jar')
+    implementation 'com.android.support:support-v4:29.0.2'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.squareup.okio:okio:1.11.0'
+    implementation 'com.squareup.okhttp:okhttp:2.7.5'
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    implementation files('libs/baidumapapi_base_v4_1_1.jar')
+    implementation files('libs/locSDK_6.13.jar')
+    implementation files('libs/baidumapapi_map_v4_1_1.jar')
+    implementation files('libs/baidumapapi_cloud_v4_1_1.jar')
+    implementation files('libs/baidumapapi_radar_v4_1_1.jar')
+    implementation files('libs/baidumapapi_search_v4_1_1.jar')
+    implementation files('libs/baidumapapi_util_v4_1_1.jar')
+    implementation files('libs/jackson-databind-2.8.1.jar')
+    implementation files('libs/jackson-annotations-2.8.1.jar')
+    implementation files('libs/jackson-core-2.8.1.jar')
+
+}

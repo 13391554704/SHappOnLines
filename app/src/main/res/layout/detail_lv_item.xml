@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/fg_sell_item_bg"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/item_sell_bg_1"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/fg_sell_item_iv"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/chanpin"
+                android:scaleType="fitXY"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <LinearLayout
+                android:id="@+id/fg_sell_item_ll_verical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/fg_sell_item_iv"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                >
+
+                <TextView
+                    android:id="@+id/fg_sell_item_tvname"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:gravity="center_vertical"
+                    android:text="双汇王中王火腿肠"
+                    android:textColor="#333333"
+                    android:layout_marginTop="2dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/fg_sell_item_tvinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:gravity="center_vertical"
+                    android:text="60g*10 支装"
+                    android:textColor="#8f8f8f"
+                    android:textSize="12sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="26dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="数量:"
+                            android:textColor="#454545"
+                            android:textSize="14sp"
+                            android:singleLine="true"
+                            android:gravity="center_vertical"
+                            />
+                        <TextView
+                            android:id="@+id/fg_sell_item_tv_show"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="14sp"
+                            android:text="10"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_vertical"/>
+                        <TextView
+                            android:id="@+id/fg_sell_item_tvunitName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="箱"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="4dp"
+                            android:gravity="center_vertical"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp">
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/money"/>
+                        <TextView
+                            android:id="@+id/fg_sell_item_tvprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:text="1000.00"
+                            android:layout_marginLeft="4dp"
+                            android:textColor="#454545"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

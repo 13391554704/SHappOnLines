@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.IndentActivity">
+
+    <include
+        android:id="@+id/indent_head"
+        layout="@layout/head_title_item" />
+
+    <LinearLayout
+        android:id="@+id/indent_ll_info"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/indent_head"
+        android:background="@drawable/boder"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/indent_ll_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="客户名称:"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+               />
+            <EditText
+                android:id="@+id/indent_ll_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:hint="商户名称"
+                android:singleLine="true"
+                android:background="#ffffff"
+                android:textColor="#505050"
+                android:textColorHint="#c7c7c7"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#f0f0f0"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+            <TextView
+                android:id="@+id/indent_ll_btn_choose"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="查询"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"/>
+        <LinearLayout
+            android:id="@+id/indent_ll_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="客户地址:"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="14sp"
+               />
+            <TextView
+                android:id="@+id/indent_ll_tv_address"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:hint="点击添加商户地址"
+                android:singleLine="true"
+                android:background="#ffffff"
+                android:textColor="#9c9c97"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/sell_iv_loc"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/indent_loc"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+               />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"/>
+        <LinearLayout
+            android:id="@+id/indent_ll_phone"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="移动电话:"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="14sp"
+               />
+            <EditText
+                android:id="@+id/indent_ll_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:hint="请输入手机号"
+                android:singleLine="true"
+                android:background="#ffffff"
+                android:textColor="#9c9c97"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/indent_image_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/indent_ll_price_info"
+        android:src="@drawable/beijing" />
+    <LinearLayout
+        android:id="@+id/indent_ll_price_info"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_above="@+id/indent_ll_price"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="商品合计"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="商品数量:"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#333333"
+          />
+
+        <TextView
+            android:id="@+id/indent_ll_total_number_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1600"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textColor="#e84232"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="总价:"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            />
+
+        <TextView
+            android:id="@+id/indent_ll_total_money_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="1600"
+            android:layout_marginLeft="4dp"
+            android:textColor="#e84232"
+            android:textSize="16sp"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/indent_ll_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/indent_ll_total_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#e84133"
+            android:text="提交订单"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/normal_text_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/indent_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/indent_image_back"
+        android:layout_below="@+id/indent_ll_info"
+        android:layout_marginTop="6dp"
+        android:divider="#f8f8f8"
+        android:dividerHeight="8dp"/>
+</RelativeLayout>

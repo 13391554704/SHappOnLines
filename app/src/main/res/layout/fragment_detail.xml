@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#ffffff">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <com.sw.mobsale.online.util.MyTextView
+                android:id="@+id/detail_tv_unfinish"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="未配送订单"
+                android:textColor="#454545"
+                android:textSize="16sp"
+                app:customFont="fonts/PINGFANG MEDIUM.TTF" />
+
+            <View
+                android:id="@+id/detail_view_gone1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="#e84232"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.sw.mobsale.online.util.MyTextView
+                android:id="@+id/detail_tv_finish"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="4dp"
+                android:gravity="center"
+                android:text="已配送订单"
+                android:textColor="#454545"
+                android:textSize="16sp"
+                app:customFont="fonts/PINGFANG MEDIUM.TTF" />
+            <View
+                android:id="@+id/detail_view_gone2"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_weight="1"
+                android:background="#e84232"
+                android:visibility="invisible" />
+            </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="#f8f8f8" />
+        <!--
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:orientation="horizontal">
+
+               <View
+                   android:id="@+id/detail_view_gone1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginRight="24dp"
+                   android:layout_weight="1"
+                   android:background="#e84232"
+                   android:visibility="invisible" />
+
+               <View
+                   android:id="@+id/detail_view_gone2"
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginLeft="24dp"
+                   android:layout_marginRight="24dp"
+                   android:layout_weight="1"
+                   android:background="#e84232"
+                   android:visibility="invisible" />
+
+           </LinearLayout>
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:background="#e8e8e8" />
+               -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/detail_fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.ClearDataActivity">
+    <include
+        android:id="@+id/clear_data_head"
+        layout="@layout/head_title_item" />
+
+    <LinearLayout
+        android:id="@+id/clear_data_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f0f0f0"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="平台订单:"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/server_order_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:layout_marginLeft="8dp"
+                    android:textSize="16sp"
+                    android:textColor="#e84232"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="自营订单:"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="#333333"
+                    />
+
+                <TextView
+                    android:id="@+id/owner_order_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:layout_marginLeft="4dp"
+                    android:textColor="#e84232"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/clear_lv_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="8dp"
+        android:divider="#f8f8f8"
+        android:layout_above="@+id/clear_data_bottom"
+        android:layout_below="@+id/clear_data_head">
+    </ListView>
+</RelativeLayout>

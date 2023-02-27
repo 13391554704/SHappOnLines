@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sw.mobsale.online.ui.UnSendActivity">
+    <ListView
+        android:layout_above="@+id/un_send_ll"
+        android:id="@+id/un_send_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="8dp"
+        android:divider="#F8F8F8">
+    </ListView>
+    <LinearLayout
+        android:id="@+id/un_send_ll"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <Button
+            android:id="@+id/un_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:background="#e84232"
+            android:text="上传"/>
+    </LinearLayout>
+</RelativeLayout>

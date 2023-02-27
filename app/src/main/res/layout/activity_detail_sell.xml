@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.DetailSellActivity">
+    <include
+        android:id="@+id/detail_sell_head"
+        layout="@layout/head_title_item" />
+
+    <LinearLayout
+        android:id="@+id/detail_sell_top"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@+id/detail_sell_head"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/detail_sell_store_ll_one"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+            <ImageView
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:src="@drawable/main_dian"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/detail_sell_tv_store"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:hint="商户名称:"
+                android:textColor="#505050"
+                android:textColorHint="#c7c7c7"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_sell_address_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detail_sell_address_tv"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:hint="商户地址:"
+                android:singleLine="true"
+                android:textColor="#9c9c97"
+                android:textColorHint="#c7c7c7"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/sell_iv_loc"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/indent_loc"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_sell_number_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="订单号:"
+                    android:textColor="#9c9c97"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_sell_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="20170105333"
+                    android:textColor="#9c9c97"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/detail_sell_phone_ll"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="手机号:"
+                    android:textColor="#9c9c97"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_sell_phone_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="13333333333"
+                    android:textColor="#0066ff"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="16sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_vertical"
+                    android:text="付款方式:"
+                    android:textColor="#9c9c97"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/detail_sell_pay_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="货到付款"
+                    android:textColor="#9c9c97"
+                    android:textColorHint="#c7c7c7"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_below="@+id/detail_sell_top"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#f8f8f8"/>
+
+    <LinearLayout
+        android:id="@+id/detail_sell_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/detail_sell_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e84232"
+            android:textColor="#ffffff"
+            android:text="配送完成"
+            android:visibility="gone"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f0f0f0"/>
+            <LinearLayout
+                android:id="@+id/detail_sell_ll_money"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:text="合计"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/moneytu" />
+
+                    <TextView
+                        android:id="@+id/detail_sell_tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="500.00"
+                        android:textColor="#e84133"
+                        android:textSize="16sp" />
+                </LinearLayout>
+             </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/detail_sell_ll_btn_count"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="#e84133">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="结算"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:text="("
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/detail_sell_ll_tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:gravity="center_vertical"
+                    android:text=")"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/detail_sell_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detail_sell_bottom_ll"
+        android:layout_below="@+id/view_bg"
+        android:divider="#f8f8f8"
+        android:dividerHeight="8dp"/>
+
+    <ImageView
+        android:id="@+id/detail_sell_iv_gototop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/sell_gototop"
+        android:visibility="gone" />
+</RelativeLayout>

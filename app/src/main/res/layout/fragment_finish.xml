@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/detail_rl_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:id="@+id/detail_rl_content"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:src="@drawable/unfinish_detail"
+            android:layout_marginTop="70dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/detail_rl_content"
+            android:layout_marginTop="20dp"
+            android:text="完成订单"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#787878"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/fg_finish_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f8f8f8"
+        android:dividerHeight="8dp"/>
+</LinearLayout>

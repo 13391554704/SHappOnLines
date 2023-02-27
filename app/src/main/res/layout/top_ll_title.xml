@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#e84232">
+    <RelativeLayout
+        android:id="@+id/head_rl_title"
+        android:layout_width="80dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/head_back_title"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/title_back"
+            android:layout_marginLeft="6dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:layout_toRightOf="@+id/head_back_title"
+            android:gravity="center_vertical"
+            android:textColor="#ffffff"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <com.sw.mobsale.online.util.MyTextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="移动配送"
+        app:customFont="fonts/PINGFANG MEDIUM.TTF"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+    <RelativeLayout
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+       >
+        <TextView
+            android:id="@+id/head_title_gone"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="显示"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:visibility="invisible"
+           />
+        <ImageView
+            android:id="@+id/head_iv_gone"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/sousuo"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+</LinearLayout>

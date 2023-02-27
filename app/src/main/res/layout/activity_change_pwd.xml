@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.sw.mobsale.online.ui.ChangePwdActivity">
+
+    <include
+        android:id="@+id/change_pwd_head"
+        layout="@layout/head_title_item" />
+
+    <ScrollView
+        android:id="@+id/login_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/change_pwd_head"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/change_pwd_ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/regllboder"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/change_pwd_et_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:hint="请输入帐号"
+                    android:textSize="16sp"
+                    android:textColorHint="#dcdcdc"
+                    android:layout_weight="0.70" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_pwd_ll_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/change_pwd_ll_phone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/regllboder"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/change_pwd_ll_et_passwrod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:hint="请输入密码"
+                    android:textSize="16sp"
+                    android:textColorHint="#dcdcdc"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.70" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_pwd_ll_repassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/change_pwd_ll_password"
+                android:background="@drawable/regllboder"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/change_pwd_ll_reg_et_repasswrod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:hint="请确认密码"
+                    android:textSize="16sp"
+                    android:textColorHint="#dcdcdc"
+                    android:inputType="textPassword"
+                    android:layout_weight="0.70" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/change_pwd_btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/change_pwd_ll_repassword"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/regbtnboder"
+                android:gravity="center"
+                android:text="确认"
+                android:textSize="16sp"
+                android:textColor="#ffffff"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

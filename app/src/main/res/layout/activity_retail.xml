@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context=".ui.RetailActivity">
+
+    <include
+        android:id="@+id/retail_head"
+        layout="@layout/head_title_item" />
+    <include
+        android:id="@+id/load_sale_nodata"
+        layout="@layout/activity_no_data"
+        android:layout_below="@+id/retail_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <!--
+    <LinearLayout
+        android:layout_below="@+id/retail_head"
+        android:id="@+id/retail_ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/boder">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="商户:"
+            android:textColor="#9c9c97"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+          />
+        <TextView
+            android:id="@+id/retail_et_store"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="零售客户"
+            android:textColor="#9c9c97"
+            android:layout_marginRight="14dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:id="@+id/view_1"
+        android:layout_below="@+id/retail_ll_store"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#f8f8f8"/>
+    <LinearLayout
+        android:id="@+id/retail_ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/view_1"
+        android:background="@drawable/boder">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="地址:"
+            android:textColor="#9c9c97"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:id="@+id/retail_et_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="商户地址"
+            android:textColor="#9c9c97"
+            android:textColorHint="#c7c7c7"
+            android:textSize="14sp" />
+    </LinearLayout>
+    -->
+    <ListView
+        android:id="@+id/retail_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#F8F8F8"
+        android:dividerHeight="6dp"
+        android:layout_below="@+id/retail_head"
+        />
+        <!--android:layout_below="@+id/retail_ll_address"
+         android:layout_marginTop="4dp"-->
+    <include layout="@layout/shopping_cart" />
+    <include layout="@layout/gototop"/>
+</RelativeLayout>
+

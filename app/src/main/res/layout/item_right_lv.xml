@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"/>
+    <TextView
+        android:id="@+id/item_right_tv_one"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="冷鲜肉"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:background="@drawable/rightbg"/>
+    <TextView
+        android:id="@+id/item_right_tv_gone"
+        android:layout_width="6dp"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        />
+</LinearLayout>

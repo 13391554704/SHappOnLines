@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    tools:context="com.sw.mobsale.online.ui.LoadSaleActivity">
+    <include
+        android:id="@+id/load_sale_head"
+        layout="@layout/head_title_item" />
+    <include
+        android:id="@+id/load_sale_nodata"
+        layout="@layout/activity_no_data"
+        android:layout_below="@+id/load_sale_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ListView
+        android:layout_below="@+id/load_sale_head"
+        android:id="@+id/load_sale_lv"
+        android:divider="#f8f8f8"
+        android:dividerHeight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <include layout="@layout/shopping_cart" />
+    <include layout="@layout/gototop"/>
+</RelativeLayout>

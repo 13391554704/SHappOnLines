@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f8f8">
+    <TextView
+        android:id="@+id/footer_view_tv"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="---已经没有商品了---"
+        android:textColor="#cccccc"
+        android:textSize="14sp"
+        android:gravity="center"
+       />
+</LinearLayout>
